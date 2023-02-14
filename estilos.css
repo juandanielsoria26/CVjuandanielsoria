@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Kanit';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*Esto es para deslizar al pasar el cursor*/
+    scroll-behavior: smooth;
+}
+/*MENU*/
+    .contenedor-header{
+        background-color: rgb(15, 22, 20);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .contenedor-header header{
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .contenedor-header header .logo a{
+        font-family: 'Kanit';
+        font-size: 36px;
+        color: rgb(189, 255, 200);
+        text-decoration: none;
+    }
+    .contenedor-header header ul{
+        display: flex;
+        list-style: none;
+    }
+    .contenedor-header header nav ul li a{
+        text-align: none;
+        color: #fff;
+        margin: 0 15px;
+        padding: 3px;
+        transition: .5s;
+        text-decoration: none;
+    }
+    .contenedor-header header nav ul li a:hover{
+        color: #1cbc98;
+    }
+    .nav-responsive{
+        background-color: #1cbc98;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 25px;
+        cursor: pointer;
+        display: none;
+    }
+    /*SECCION INICIO*/
+    .inicio{
+        background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(https://c0.wallpaperflare.com/preview/268/76/950/matrix-code-movie-coding.jpg);
+        background-size: cover;
+        height: 150vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+    .inicio .contenido-banner{
+        padding: 20px;
+        background-color:  rgb(15, 22, 20);
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
+    }
+    .inicio .contenido-banner img{
+        margin-top: 40px;
+        border: 10px solid #1cb698;
+        display: block;
+        width: 80%;
+        margin: auto;
+        border-radius: 20%;
+        
+    }
+    .inicio .contenido-banner h1{
+        margin-top: 40px;
+        font-size: 42px;
+        font-family: 'Kanit';
+    }
+    .inicio .contenido-banner h2{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .inicio .contenido-banner .redes a{
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #fff;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        margin: 40px 5px;
+        border-radius: 100px;
+        font-size: 25px;
+        transition: .3s;
+    }
+    .inicio .contenido-banner .redes a:hover{
+        background-color: #05775e;
+    }
+    /* SOBRE MI */
+    .sobremi{
+        background-color: #1e2326;
+        color: #fff;
+        padding: 30px 20px;
+    }
+    .sobremi .contenido-seccion{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .sobremi h2{
+        font-size: 48px;
+        font-family: 'Kanit';
+        text-align: center ;
+        padding: 20px 0;
+    }
+    .sobremi .contenido-seccion p{
+        font: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .sobremi .contenido-seccion p span{
+        color: #35aa91;
+        font-weight: bold;
+    }
+    .sobremi .fila{
+        display: flex;
+    } 
+    .sobremi .fila .col{
+        width: 80%;
+    }
+    .sobremi .fila .col h3{
+        font-size: 28px;
+        font-family:'Kanit' ;
+        margin-bottom: 25px;
+    }
+    .sobremi .fila .col ul{
+        list-style-position: inside ;
+    }
+    .sobremi .fila .col ul li{
+        margin: 12px 0;
+    }
+    .sobremi .fila .col ul li strong{
+        display: inline-block;
+        color: #1cb698;
+        width: 130px;
+    }
+    .sobremi .fila .col ul li span{
+        background-color: #ffffff;
+        padding: 0px;
+        font-weight: bold;
+        border-radius: 7px;
+        color: #1e2326;
+        text-align: left;
+    }
+    .sobremi .fila .col .contenedor-intereses{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sobremi .fila .col .contenedor-intereses .interes{
+        width: 100px;
+        height: 100px;
+        background-color: #252a2e;
+        border-radius: 10px;
+        margin: 0 15px 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .sobremi .fila .col .contenedor-intereses .interes:hover{
+        background-color: #1cb698;
+    }
+    .sobremi .fila .col .contenedor-intereses .interes i{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .sobremi button{
+        cursor: pointer;
+        margin: 20px auto;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        width: fit-content;
+        display: block;
+        padding: 10px 22px;
+        font-size: 16px;
+        color: #feffff;
+        position: relative;
+        z-index: 10; 
+        border-radius: 7px; 
+    }
+    .sobremi button .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color:#1cb698 ;
+        z-index: -1;
+        transition: 1s;
+        border-radius: 4px;
+    }
+    .sobremi button:hover .overlay{
+        width: 100%;
+    }
+    .Estudios .contenido-seccion {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:'Kanit' ;
+        max-width: 1000px;
+        margin: auto;
+        border: #fff solid ;
+    }
